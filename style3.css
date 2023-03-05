@@ -117,9 +117,10 @@ h5.card-text {
 }
 
 .card-promo-minimal {
-    font-size: 11px;
+    font-size: 9px;
     background-color: #da251c;
     position: absolute;
+    font-weight: bold;
 }
 
 .card-promo-potongan {
@@ -146,7 +147,7 @@ footer {
     }
     /* Card Produk*/
     .produk {
-        height: 30vw;
+        height: 40vw;
     }
     p.card-promo-minimal {
         font-size: 10px;
