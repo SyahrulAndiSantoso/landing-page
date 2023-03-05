@@ -117,7 +117,7 @@ h5.card-text {
     color: #8c8888;
 }
 
-p.card-promo-minimal {
+.card-promo-minimal {
     font-size: 11px;
     background-color: #da251c;
     position: absolute;
@@ -128,7 +128,6 @@ p.card-promo-minimal {
     background-color: #da251c;
     border-radius: 10px;
     position: absolute;
-    left: -3px;
 }
 
 /* Footer */
