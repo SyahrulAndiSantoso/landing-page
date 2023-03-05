@@ -119,16 +119,16 @@ h5.card-text {
 
 p.card-promo-minimal {
     font-size: 11px;
-    border: 1px solid #da251c;
-    color: #da251c;
+    background-color: #da251c;
+    position: absolute;
 }
 
 .card-promo-potongan {
     font-size: 11px;
-    border: 1px solid #f9c1c1;
-    color: #da251c;
-    background-color: #f9c1c1;
+    background-color: #da251c;
     border-radius: 10px;
+    position: absolute;
+    left: -3px;
 }
 
 /* Footer */
