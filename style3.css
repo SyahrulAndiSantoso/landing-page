@@ -101,7 +101,7 @@ h5.card-text {
 }
 
 .produk {
-    height: 35vw;
+    height: 40vw;
 }
 
 .card-body h5,
@@ -147,7 +147,7 @@ footer {
     }
     /* Card Produk*/
     .produk {
-        height: 25vw;
+        height: 30vw;
     }
     p.card-promo-minimal {
         font-size: 10px;
@@ -178,7 +178,7 @@ footer {
     }
     /* Card Produk*/
     .produk {
-        height: 30vw;
+        height: 35vw;
     }
     .card-body h5,
     .card-body p {
@@ -224,7 +224,7 @@ footer {
     }
     /* Card Produk */
     .produk {
-        height: 20vw;
+        height: 30vw;
     }
 }
 
@@ -235,6 +235,6 @@ footer {
     }
     /* Card Produk */
     .produk {
-        height: 15vw;
+        height: 20vw;
     }
 }
