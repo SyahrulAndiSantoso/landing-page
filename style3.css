@@ -66,6 +66,7 @@ input.search {
 }
 /* teks detail */
 .teks-detail {
+    font-size: 75%;
     color: #e04942;
 }
 
@@ -138,6 +139,17 @@ footer {
     background-color: #b10133;
     margin-top: 100px;
 }
+
+/* Profile */
+/* Card alamat dan profile */
+.card-alamat a,
+.detail-profile p,
+.detail-profile a {
+    font-size: 75%;
+}
+h5 {
+    font-size: 100%;
+}
 @media (min-width: 576px) {
     /* image banner */
     .img-banner {
@@ -161,6 +173,14 @@ footer {
     }
     .card-promo-potongan {
         font-size: 10px;
+    }
+    /* Profile */
+    /* Card alamat dan profile */
+    .card-alamat a,
+    .detail-profile p,
+    .detail-profile a,
+    .teks-detail {
+        font-size: 90%;
     }
 }
 
@@ -229,6 +249,14 @@ footer {
     /* Card Produk */
     .produk {
         height: 30vw;
+    }
+    /* Profile */
+    /* Card alamat dan profile */
+    .card-alamat a,
+    .detail-profile p,
+    .detail-profile a,
+    .teks-detail {
+        font-size: 100%;
     }
 }
 

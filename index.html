@@ -34,7 +34,7 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
-        <title>Search</title>
+        <title>Profile</title>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -138,82 +138,92 @@
         </nav>
         <br />
 
-        <div class="container">
-            <div class="row">
-                <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
-                    <div class="card card-produk">
-                        <p
-                            class="text-center text-white card-promo-minimal px-1 py-1 rounded-3"
-                        >
-                            Beli 2, Diskon 50%
-                        </p>
-                        <img
-                            src="banner.jpg"
-                            class="card-img-top produk"
-                            alt="..."
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">Kemeja</h5>
-                            <p class="card-text">Adidas</p>
-                            <h5 class="card-harga">Rp.100.000</h5>
-                        </div>
-                    </div>
+        <div class="container mb-4 detail-profile">
+            <div class="row mb-2">
+                <div class="col-lg-12 d-flex justify-content-between">
+                    <h5>Profile</h5>
+                    <a class="btn text-white btn-merah rounded-5 px-3" href="#"
+                        >Edit</a
+                    >
                 </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
-                    <div class="card card-produk">
-                        <span class="px-2 py-2 text-white card-promo-potongan"
-                            >50%</span
-                        >
-                        <img
-                            src="banner.jpg"
-                            class="card-img-top produk"
-                            alt="..."
-                        />
-                        <div class="card-body pb-1">
-                            <h5 class="card-title">Kemeja</h5>
-                            <p class="card-text">Adidas</p>
-                            <div class="d-flex">
-                                <p
-                                    class="harga-awal text-decoration-line-through me-2"
-                                >
-                                    Rp.100.000
-                                </p>
-                                <h5 class="card-harga">Rp.50.000</h5>
+            </div>
+            <div class="row">
+                <div class="col-12 d-lg-flex d-md-flex">
+                    <p>Syahrul Riza Andi</p>
+                    <p class="px-lg-4 px-md-3">asyahrulriza@gmail.com</p>
+                    <p>088103678988</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb-4 card-alamat">
+            <div class="row mb-2">
+                <div class="col-lg-12 d-flex justify-content-between">
+                    <h5>Alamat</h5>
+                    <a class="btn text-white btn-merah rounded-5 px-3" href="#"
+                        >Tambah</a
+                    >
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-lg-4 col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Rumah</h5>
+                            <p>Provinsi</p>
+                            <p>Jawa Timur</p>
+                            <p>Kota Sidoarjo</p>
+                            <p>Detail Alamat</p>
+                            <p>Perum Griya Samudra Asri Blok A5/No.11</p>
+                            <div class="">
+                                <a href="#" class="me-2">Edit</a>
+                                <a href="#" class="">Hapus</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
-                    <div class="card card-produk">
-                        <img
-                            src="banner.jpg"
-                            class="card-img-top produk"
-                            alt="..."
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">Kemeja</h5>
-                            <p class="card-text">Adidas</p>
-                            <h5 class="card-harga text-dark">Rp.50.000</h5>
-                        </div>
-                    </div>
+            </div>
+        </div>
+
+        <div class="container mb-4">
+            <div class="row mb-2">
+                <div class="col-lg-12">
+                    <h5>Daftar Pesanan</h5>
                 </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
-                    <div class="card card-produk">
-                        <p
-                            class="text-center text-white card-promo-minimal px-1 py-1 rounded-3"
-                        >
-                            Beli 2, Diskon 50%
-                        </p>
-                        <img
-                            src="banner.jpg"
-                            class="card-img-top produk"
-                            alt="..."
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">Kemeja</h5>
-                            <p class="card-text">Adidas</p>
-                            <h5 class="card-harga">Rp.100.000</h5>
-                        </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Gambar</th>
+                                    <th scope="col">Nama Produk</th>
+                                    <th scope="col">Kuantitas</th>
+                                    <th scope="col">Total</th>
+                                    <th scope="col">Total</th>
+                                    <th scope="col">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                    <td>@mdo</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                    <td>@fat</td>
+                                    <td>@fat</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
