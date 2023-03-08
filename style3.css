@@ -152,11 +152,31 @@ footer h2 {
 .detail-profile p,
 .detail-profile a,
 footer p,
-table {
+table,
+.keranjang h5,
+.keranjang span,
+.keranjang a,
+.ringkasan-harga h5,
+.ringkasan-harga span,
+.ringkasan-harga button {
     font-size: 75%;
 }
 h5 {
     font-size: 100%;
+}
+/* Keranjang */
+/* Keranjang produk */
+.keranjang-produk img {
+    width: 80%;
+    object-fit: cover;
+    max-height: 30vw;
+}
+/* Invoice */
+.ringkasan-harga {
+    height: 25vw;
+    position: relative;
+    border-radius: 10px;
+    border: 3px solid rgba(3, 46, 71, 0.1);
 }
 @media (min-width: 576px) {
     /* image banner */
@@ -187,8 +207,24 @@ h5 {
     .detail-profile p,
     .detail-profile a,
     footer p,
-    table {
+    table,
+    .teks-detail,
+    .keranjang h5,
+    .keranjang span,
+    .keranjang a,
+    .ringkasan-harga h5,
+    .ringkasan-harga span,
+    .ringkasan-harga button {
         font-size: 90%;
+    }
+    .judul-keranjang {
+        color: red;
+    }
+    .ringkasan-harga{
+        height: 150px;
+    }
+    .keranjang-produk img{
+        max-height: 27vw;
     }
 }
 
@@ -220,6 +256,15 @@ h5 {
     }
     footer {
         line-height: 15px;
+    }
+    .judul-keranjang {
+        color: blue;
+    }
+    .ringkasan-harga{
+        height: 150px;
+    }
+    .keranjang-produk img{
+        max-height: 25vw;
     }
 }
 
@@ -266,8 +311,27 @@ h5 {
     .detail-profile p,
     .detail-profile a,
     footer p,
-    table {
+    table,
+    .teks-detail,
+    .keranjang h5,
+    .keranjang span,
+    .keranjang a,
+    .ringkasan-harga h5,
+    .ringkasan-harga span,
+    .ringkasan-harga button {
         font-size: 100%;
+    }
+    .judul-konten h5 {
+        font-size: 120%;
+    }
+    .judul-keranjang {
+        color: black;
+    }
+    .ringkasan-harga{
+        height: 180px;
+    }
+    .keranjang-produk img{
+        max-height: 30vw;
     }
 }
 
