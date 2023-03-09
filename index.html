@@ -1,257 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="style3.css" />
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+        />
+        <link rel="stylesheet" href="style3.css" />
 
-    <!-- Owl Carousel -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+        <!-- Owl Carousel -->
+        <link
+            rel="stylesheet"
+            href="owl.carousel.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+            integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Detail Produk</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">The British</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarText"
-          aria-controls="navbarText"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Beranda</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Promo</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Kategori
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item" href="#">Celana</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Kemeja</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Kaos</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <form>
-                <input
-                  class="form-control search"
-                  type="search"
-                  placeholder="Cari Produk"
-                  aria-label="Search"
-                />
-              </form>
-            </li>
-          </ul>
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-right">
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="bi bi-bag-fill"></i></a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Syahrul Riza
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item" href="#">Profile</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Logout</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <br />
-
-    <div class="container">
-      <div class="row justify-content-around">
-        <div class="col-lg-6 img-produk">
-          <div class="row mb-3">
-            <div class="col-12">
-              <span class="fs-6 px-2 py-2 text-white card-promo-potongan"
-                >50%</span
-              >
-              <img src="banner.jpg" alt="" class="besar" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+            integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>Detail Produk</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">The British</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarText"
+                    aria-controls="navbarText"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                aria-current="page"
+                                href="#"
+                                >Beranda</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Promo</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="navbarDropdown"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Kategori
+                            </a>
+                            <ul
+                                class="dropdown-menu"
+                                aria-labelledby="navbarDropdown"
+                            >
+                                <li>
+                                    <a class="dropdown-item" href="#">Celana</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Kemeja</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Kaos</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <form>
+                                <input
+                                    class="form-control search"
+                                    type="search"
+                                    placeholder="Cari Produk"
+                                    aria-label="Search"
+                                />
+                            </form>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-right">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"
+                                ><i class="bi bi-bag-fill"></i
+                            ></a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="navbarDropdown"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Syahrul Riza
+                            </a>
+                            <ul
+                                class="dropdown-menu"
+                                aria-labelledby="navbarDropdown"
+                            >
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >Profile</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="owl-carousel owl-theme">
-              <div class="item">
-                <img src="banner.jpg" alt="" class="kecil" />
-              </div>
+        </nav>
+        <br />
+
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-lg-6 img-produk">
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <span
+                                class="fs-6 px-2 py-2 text-white card-promo-potongan"
+                                >50%</span
+                            >
+                            <img
+                                src="banner.jpg"
+                                alt=""
+                                class="besar"
+                            />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <img
+                                    src="banner.jpg"
+                                    alt=""
+                                    class="kecil"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 pt-3 pt-lg-5 detail-produk">
+                    <h5 class="teks-merah mb-2 mb-lg-4">Gotchi</h5>
+                    <p class="mb-2 mb-lg-3">Uniqlo</p>
+                    <div class="col-6 d-flex justify-content-between mb-lg-2">
+                        <p class="harga-awal text-decoration-line-through">
+                            Rp.100.000
+                        </p>
+                        <p class="teks-merah">Rp.50.000</p>
+                    </div>
+                    <p class="mb-lg-4">Kaos</p>
+                    <div class="col-12 col-lg-12">
+                        <button
+                            style="width: 100%"
+                            class="btn btn-merah text-white"
+                        >
+                            Masukkan Keranjang
+                        </button>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="col-lg-5 pt-3 pt-lg-5 detail-produk">
-          <h5 class="teks-merah mb-2 mb-lg-4">Gotchi</h5>
-          <p class="mb-2 mb-lg-3">Uniqlo</p>
-          <div class="col-6 d-flex justify-content-between mb-lg-2">
-            <p class="harga-awal text-decoration-line-through">Rp.100.000</p>
-            <p class="teks-merah">Rp.50.000</p>
-          </div>
-          <p class="mb-lg-4">Kaos</p>
-          <div class="col-12 col-lg-12">
-            <button style="width: 100%" class="btn btn-merah text-white">
-              Masukkan Keranjang
-            </button>
-          </div>
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 py-4 py-lg-5 deskripsi-produk">
+                    <h5><b>Deskripsi</b></h5>
+                    <p class="text-secondary">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Eos sapiente ab, similique ipsam accusamus rem
+                        sint, obcaecati nostrum nulla voluptate quod placeat
+                        voluptas tenetur consequuntur ullam, architecto
+                        inventore laudantium quasi? Aliquam veritatis iure
+                        quaerat quo recusandae molestiae accusamus reprehenderit
+                        sunt esse corrupti totam repudiandae ipsam praesentium,
+                        vel perspiciatis dolorem eligendi ab suscipit. Modi illo
+                        omnis magnam possimus accusamus ducimus facere debitis
+                        saepe provident incidunt. Exercitationem quo facilis
+                        tempora id, itaque dolorem commodi sed eius blanditiis!
+                        Ipsa perferendis cupiditate temporibus odit eius tempore
+                        nesciunt! Nulla amet corporis sint dolor! Dicta quis
+                        tempore id. Veniam aliquid laborum a beatae, quaerat
+                        corporis quibusdam, eius temporibus similique explicabo
+                        ut labore ipsam quo atque adipisci illo dignissimos iure
+                        error eveniet dolorum amet! Sed cum doloribus porro
+                        modi, accusamus blanditiis ullam recusandae corrupti
+                        amet reiciendis dolorem alias architecto fugit in
+                        expedita hic at exercitationem officia eius aut error
+                        nesciunt? Numquam atque inventore autem explicabo
+                        provident laudantium, perferendis tempore officia ab
+                        placeat magnam dignissimos est maxime omnis dicta. Enim
+                        similique, est velit delectus quae tenetur blanditiis
+                        iure explicabo hic nemo provi
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-12 py-4 py-lg-5 deskripsi-produk">
-          <h5><b>Deskripsi</b></h5>
-          <p class="text-secondary">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
-            sapiente ab, similique ipsam accusamus rem sint, obcaecati nostrum
-            nulla voluptate quod placeat voluptas tenetur consequuntur ullam,
-            architecto inventore laudantium quasi? Aliquam veritatis iure
-            quaerat quo recusandae molestiae accusamus reprehenderit sunt esse
-            corrupti totam repudiandae ipsam praesentium, vel perspiciatis
-            dolorem eligendi ab suscipit. Modi illo omnis magnam possimus
-            accusamus ducimus facere debitis saepe provident incidunt.
-            Exercitationem quo facilis tempora id, itaque dolorem commodi sed
-            eius blanditiis! Ipsa perferendis cupiditate temporibus odit eius
-            tempore nesciunt! Nulla amet corporis sint dolor! Dicta quis tempore
-            id. Veniam aliquid laborum a beatae, quaerat corporis quibusdam,
-            eius temporibus similique explicabo ut labore ipsam quo atque
-            adipisci illo dignissimos iure error eveniet dolorum amet! Sed cum
-            doloribus porro modi, accusamus blanditiis ullam recusandae corrupti
-            amet reiciendis dolorem alias architecto fugit in expedita hic at
-            exercitationem officia eius aut error nesciunt? Numquam atque
-            inventore autem explicabo provident laudantium, perferendis tempore
-            officia ab placeat magnam dignissimos est maxime omnis dicta. Enim
-            similique, est velit delectus quae tenetur blanditiis iure explicabo
-            hic nemo provi
-          </p>
+        <div class="container mb-5">
+            <div class="row mb-3 judul-konten">
+                <div class="col-lg-12">
+                    <a
+                        class="teks-detail float-end teks-merah text-decoration-none"
+                        href="#"
+                        >Lihat Detail</a
+                    >
+                </div>
+            </div>
+            <div class="row">
+                <div class="produk-carousel owl-theme">
+                    <div class="item mb-2">
+                        <div class="card card-produk">
+                            <p
+                                class="text-center text-white card-promo-minimal px-1 py-1 rounded-3"
+                            >
+                                Beli 2, Diskon 50%
+                            </p>
+                            <img
+                                src="banner.jpg"
+                                class="card-img-top produk"
+                                alt="..."
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">Kemeja</h5>
+                                <p class="card-text">Adidas</p>
+                                <h5 class="teks-merah">Rp.100.000</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
-    <footer class="container-fluid">
-      <div class="container px-3 py-5">
-        <div class="row text-white d-flex justify-content-between">
-          <div class="col-md-4 col-lg-4">
-            <h2>The British</h2>
-          </div>
-          <div class="col-md-4 col-lg-4">
-            <h5>Alamat</h5>
-            <p>DTC Wonokromo</p>
-            <p>Lt 3 Blok A 99-102, Surabaya</p>
-          </div>
+        <div class="container">
+            <div class="row mb-3 judul-konten">
+                <div class="col-lg-12">
+                    <a
+                        class="teks-detail float-end teks-merah text-decoration-none"
+                        href="#"
+                        >Lihat Detail</a
+                    >
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="produk-carousel owl-theme">
+                    <div class="item mb-2">
+                        <div class="card card-produk">
+                            <span
+                                class="px-2 py-2 text-white card-promo-potongan"
+                                >50%</span
+                            >
+                            <img
+                                src="banner.jpg"
+                                class="card-img-top produk"
+                                alt="..."
+                            />
+                            <div class="card-body pb-1">
+                                <h5 class="card-title">Kemeja</h5>
+                                <p class="card-text">Adidas</p>
+                                <div class="d-flex">
+                                    <p
+                                        class="harga-awal text-decoration-line-through me-2"
+                                    >
+                                        Rp.100.000
+                                    </p>
+                                    <h5 class="teks-merah">Rp.50.000</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+        <footer class="container-fluid">
+            <div class="container px-3 py-5">
+                <div class="row text-white d-flex justify-content-between">
+                    <div class="col-md-4 col-lg-4">
+                        <h2>The British</h2>
+                    </div>
+                    <div class="col-md-4 col-lg-4">
+                        <h5>Alamat</h5>
+                        <p>DTC Wonokromo</p>
+                        <p>Lt 3 Blok A 99-102, Surabaya</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
-    <!-- Jquery -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
-      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
 
-    <!-- Owl Carousel -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+        <!-- Jquery -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+            integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
 
-    <script>
-      $(".owl-carousel").owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        responsive: {
-          0: {
-            items: 4,
-          },
-          576: {
-            items: 4,
-          },
-          768: {
-            items: 4,
-          },
-          1000: {
-            items: 4,
-          },
-          1200: {
-            items: 4,
-          },
-        },
-      });
-    </script>
-  </body>
+        <!-- Owl Carousel -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+            integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <script>
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 4,
+                    },
+                    576: {
+                        items: 4,
+                    },
+                    768: {
+                        items: 4,
+                    },
+                    1000: {
+                        items: 4,
+                    },
+                    1200: {
+                        items: 4,
+                    },
+                },
+            });
+        </script>
+        <script>
+            $(".produk-carousel").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 2,
+                    },
+                    576: {
+                        items: 2,
+                    },
+                    768: {
+                        items: 2,
+                    },
+                    992: {
+                        items: 3,
+                    },
+                    1200: {
+                        items: 4,
+                    },
+                },
+            });
+        </script>
+    </body>
 </html>
